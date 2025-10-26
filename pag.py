@@ -1,26 +1,21 @@
 
 from tkinter import *
-import time 
+from ball import *
+import time
+
+ancho = 400
+alto = 400
 
 ventana = Tk()
-x = velocidad = 1
-y = velocidad = 1   
-
-canvas = Canvas(width=500, height=500, bg="black")
+canvas = Canvas(ventana, width=ancho, height=alto)
 canvas.pack()
-
-fotoimagen = PhotoImage(file='homero.gif')
-my_image = canvas.create_image(0, 0, image=fotoimagen, anchor=NW)
-
+pelota_voley = pelota(canvas, 0, 0, 100, 1 , 1,  "red")
 
 while True:
-    coordenadas = canvas.coords(my_image)
-    print(coordenadas)
-    if coordenadas[0] >= 500:
-        x = -velocidad
-    canvas.move(my_image, x, 0)
+    pelota_voley.mover()
     ventana.update()
-    time.sleep(0.01)
+    time.sleep(0.001)
+
 
 
 ventana.mainloop()
