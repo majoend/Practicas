@@ -12,6 +12,7 @@ canvas.pack()
 fotoimagen = PhotoImage(file='homero.gif')
 my_image = canvas.create_image(0, 0, image=fotoimagen, anchor=NW)
 
+
 while True:
     coordenadas = canvas.coords(my_image)
     print(coordenadas)
