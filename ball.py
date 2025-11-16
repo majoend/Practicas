@@ -1,6 +1,7 @@
 class pelota:
 
     def __init__(self, canvas,  x, y, diameter, velocidad_x, velocidad_y, color):
+       
        self.canvas = canvas
        self.image =canvas.create_oval(x, y, diameter, diameter, fill=color)
        self.velocidad_x = velocidad_x 
