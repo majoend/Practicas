@@ -1,11 +1,9 @@
 import smtplib
 
 sender_enviar = "correodepruebas12025@gmail.com"
-receiver_recibe = ("mariaisaac181013@gmail.com", 
-                   "orlandoisaac181013.ossp23452@gmail.com", 
-                   "orlandosalas99@gmail.com")
+receiver_recibe = ("")
 
-password_contraseña = "vpiu snqy bvew m.........wer"
+password_contraseña = ""
 subject_asunto = "Hola"
 body_cuerpomensaje = "This is Python, aprendiendo como enviar correos desde codigo."
 
